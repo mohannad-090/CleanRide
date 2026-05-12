@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | CleanRide</title>
+  <link rel="icon" href="images/CleanRide.jpeg" type="image/x-icon" >
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b0f19;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* صندوق بسيط ونظيف */
+    .thankyou-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 50px 40px;
+      max-width: 550px;
+      width: 100%;
+    }
+
+    /* عنوان كبير */
+    .thankyou-box h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .thankyou-box h1 span {
+      color: #00bfff;
+    }
+
+    /* رسالة الشكر */
+    .thankyou-box p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .thankyou-box .small-text {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    /* الزر (زي اللي في موقعك) */
+    .home-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #00bfff;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: translateY(-3px);
+      background: #0099dd;
+      box-shadow: 0 10px 25px rgba(0, 191, 255, 0.3);
+    }
+
+    /* للشاشات الصغيرة */
+    @media (max-width: 480px) {
+      .thankyou-box {
+        padding: 35px 25px;
+      }
+      .thankyou-box h1 {
+        font-size: 2.2rem;
+      }
+      .thankyou-box p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-box">
+    <h1>Thank <span>You!</span></h1>
+    <p>Your request has been received successfully.</p>
+    <p class="small-text">Our team will contact you very soon.</p>
+    <a href="index.html" class="home-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
